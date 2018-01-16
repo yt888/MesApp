@@ -77,14 +77,7 @@ class ViewController: UIViewController {
         //        let  esn        = MobileArkAgent.getParam(esnparam);
         //-------------------------------------------------------------------------------
         
-        
-        //var urlstr = "https://apigatewayqa.sgmlink.com:3223/service/mesapp/mesapp/page/loginapp.jsp?access=ios&token_app_en=";
-         var urlstr = "https://b2eapi.saic-gm.com:3233/service/mesapp/mesapp/page/loginapp.jsp?access=ios&token_app_en=";
-        urlstr += secrettoken as! String;
-        urlstr += "&loginname="+loginname!;
-        urlstr += "&password=123456&tokenout=1800";
-        
-        
+
         let url: NSURL = NSURL(string: urlstr)!;
         
         let requestObj: URLRequest = URLRequest(url: url as URL);
